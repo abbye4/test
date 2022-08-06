@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- char encoding -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Contace me" />
+
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- start of the body -->
+  <body>
+    <main>
+      <header>
+        <!-- This is the title of the webpage in the biggest heading h1 -->
+        <h1>Contact Me</h1>
+
+        <!--unordered list of links to navigate within the website -->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" title="link to same directory">Home</a>
+            </li>
+            <li>
+              <a href="London.html" title="link up one directory">London</a>
+            </li>
+            <li>
+              <a href="Amsterdam.html" title="link up one directory"
+                >Amsterdam</a
+              >
+            </li>
+            <li>
+              <a href="Paris.html" title="link up one directory">Paris</a>
+            </li>
+            <li>
+              <a href="Rome.html" title="link up one directory">Rome</a>
+            </li>
+            <li>
+              <a href="contact.html" title="link up one directory"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="form-title">Send Me A Message!</h2>
+      <!-- contact Form -->
+      <div class="contact_grid">
+        <div id="contact_pic">
+          <img
+            src="images/Rome/abbysamrome.png"
+            alt="couple in front on coloseum"
+          />
+        </div>
+        <!-- first name field -->
+        <div class="form-container">
+          <form action="/action_page.php">
+            <div class="form">
+              <label for="fname">First Name:</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your Name"
+              />
+            </div>
+            <!-- last name field -->
+            <div class="form">
+              <label for="lname">Last Name:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name"
+              />
+            </div>
+            <!-- email field -->
+            <div class="form">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="me@example.com"
+              />
+            </div>
+            <!-- phone number field -->
+            <div class="form">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="Phone"
+                placeholder="555-555-555"
+              />
+            </div>
+            <!-- date field -->
+            <div class="form">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <!-- favorite color field -->
+            <div class="form">
+              <label for="favcolor">Favorite color:</label>
+              <input
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                value="#ff0000"
+              />
+            </div>
+            <!-- send the message field -->
+            <div class="form">
+              <label for="Message">Message:</label>
+              <textarea
+                id="Message"
+                name="Message"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+            </div>
+            <!-- submit the form or reset -->
+            <input type="submit" value="Submit" />
+            <input type="reset" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- footer for whole site -->
+    <footer>
+      <p>
+        Copyright &copy; 2022 - Abigail Magdaleno. &nbsp;All rights
+        reserved.&nbsp;
+      </p>
+    </footer>
+  </body>
+</html>

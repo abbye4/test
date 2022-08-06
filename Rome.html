@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- char encoding -->
+    <meta charset="utf-8" />
+    <meta name="description" content="A travel blog" />
+
+    <title>Rome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #c3c49e;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        margin: auto;
+      }
+
+      /* text elements */
+
+      h1 {
+        font-size: 55px;
+        font-family: "Sacramento", cursive;
+        text-align: center;
+        padding: 0;
+        margin: 20px;
+      }
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 10px;
+        margin: 0;
+
+      }
+
+      .page_intro {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        padding-left: 80px;
+        padding-right: 80px;
+        line-height: 30px;
+        font-style: italic;
+        font-size: 18px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+      }
+
+      .rome_highlights{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+      }
+/* description list formatting */
+      dl{
+    width:70%;
+    margin: auto;
+    padding-top: 30px;
+      }
+      dt{
+          padding-left: 30px;
+          font-size: 22px;
+          line-height: 30px;
+          word-spacing: 3px;
+          letter-spacing: 3px;
+          background-color:#D8FFDD;
+          border-radius: 4px;
+          width:100%;
+      }
+
+      dd{
+          padding-right: 100px;
+          padding-left: 100px;
+          line-height: 30px;
+          word-spacing: 5px;
+          padding-bottom: 30px;
+          padding-top: 30px;
+          font-size:18px;
+      }
+      /* navigation formatting */
+      nav {
+        background-color: #495f41;
+        border-bottom: 3px solid #d8ffdd;
+        border-top: 3px solid #d8ffdd;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul {      
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #d8ffdd;
+      }
+
+      /* unvisted site */
+      nav li a:link {
+        color:#d8ffdd;
+        text-decoration: none;
+      }
+
+      /* mouse goes over link */
+      nav li a:hover {
+        color: #dedbd8;
+        opacity: 30%;
+      }
+
+      /* active link */
+      nav li a:active {
+        background-color: #dedbd8;
+        opacity: 50%;
+      }
+
+      img {
+        width: 90%;
+        height: 100%;
+        background-color: #d8ffdd;
+        border: 3px solid #2e5339;
+        border-radius: 4px;
+        padding: 5px;
+      }
+
+      /* footer formatting */
+
+      footer {
+        background-color: #495f41;
+        color: #d8ffdd;
+        text-align: center;
+        font-size: 14px;
+      }
+
+/* ------tablet mode-------- */
+
+@media screen and (max-width:775px){
+    .body{
+        min-width: 650px;
+        max-width: 775px;
+    }
+    nav ul {
+        list-style: none;
+        padding:0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display:flex;
+        justify-content: center;
+        
+    }
+    nav ul li{
+        letter-spacing: 5px;
+        font-size:14px;
+        text-align:center;
+        line-height: 10px;
+        padding-top:5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right:10px;    
+    } 
+
+    /* description list */
+    dl{
+        text-align: center;
+        width:80%;
+      }
+       dt{
+        padding: 0;
+      }
+       dd{
+        font-size: 16px;
+        padding: 25px;
+        margin: auto;
+        
+      }
+
+} 
+
+/* -----SmartPhone-------- */
+
+ @media  screen and (max-width:480px) {
+    .body{
+        min-width: 320px;
+        max-width:480px
+    }
+  h1{
+    font-size: 35px;
+  }
+    nav ul {
+        list-style: none;
+        padding:0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav ul li{
+        letter-spacing: 5px;
+        font-size: 15px;
+        text-align:center;
+        line-height: 25px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right:15px;    
+    }
+    .rome_highlights{
+      display:grid;
+      text-align: center;
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+    dl{
+      text-align: center;
+    }
+    dt{
+      padding: 0;
+    }
+    dd{
+      font-size: 16px;
+      padding: 25px;
+      margin: auto;
+      
+    }
+    }
+
+    </style>
+  </head>
+  <!-- start of the body -->
+  <body>
+    <main>
+      <header>
+        <!-- This is the title of the webpage in the biggest heading h1 -->
+        <h1>Rome</h1>
+
+        <!--unordered list of links to navigate within the website -->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" title="link to same directory">Home</a>
+            </li>
+            <li>
+              <a href="London.html" title="link up one directory">London</a>
+            </li>
+            <li>
+              <a href="Amsterdam.html" title="link up one directory"
+                >Amsterdam</a
+              >
+            </li>
+            <li>
+              <a href="Paris.html" title="link up one directory">Paris</a>
+            </li>
+            <li>
+              <a href="Rome.html" title="link up one directory">Rome</a>
+            </li>
+            <li>
+              <a href="contact.html" title="link up one directory"
+                >Contact&nbsp;Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <p class="page_intro">
+        Rome is the capital city of Italy. It was a beautiful city with a rich
+        history and amazing architecture. We were not prepared for the extremely
+        high temperatures. The food was by far my favorite part of the trip.
+        Pizza and pasta for days. Luckily the large amount of walking made up
+        for our diet.
+      </p>
+      <div class="rome_highlights">
+        <div>
+          <img
+          src="images/Rome/col.png"
+          alt="coloseum"
+          ></img>
+        </div>
+
+        <div>
+          <img
+          src="images/Rome/trevi.png"
+          alt="the tevi fountain"
+          ></img>
+        </div>
+
+       <div>
+        <img src="images/rome/street.png"
+          alt="street view of rome"
+        ></img>
+       </div> 
+      </div>
+
+  
+      <h2>Highlights</h2>
+      <!-- description list of all the highligts of london -->
+      <div>
+       
+        <dl>
+        <div>
+          <dt>Colosseum</dt>
+          <dd>
+            When you think of Rome of course you think of the Colosseum. We had the opportunity to  
+            tour the inside and get a different point of view. A large amphitheatre that would house 65,000
+            Roman spectators in acient Rome. An amazing piece of history.
+          </dd>
+        </div>
+        <div>
+          <dt>Trevi Fountain of Rome</dt>
+          <dd>
+            The most famous foutain in quite possible the world. It is a monument that depicts Neptune 
+            the god of the sea on his chariot. You can't leave without tosing a coin in the fountain!
+          </dd>
+        </div>
+        <div>
+          <dt>Pantheon</dt>
+          <dd>
+             The Pantheon is a former Roman temple that has been transformed into a Catholic church. It 
+             is amazing to see how much of the building has been perserved. 
+          </dd>
+        </div>
+        <div>
+          <dt>St. Peter's Basilica</dt>
+          <dd>
+            Located in the Vatican City and built in the 1506. It is also the resting place and many notable individuals and popes.
+            You can also find famous artwork and sculptures inside the chapels.ca
+          </dd>
+        </div>
+        <div>
+          <dt>Castel Sant'Angelo</dt>
+          <dd>
+            The castle was originally the tomb of Roman Emperor Hadrian and his family. It was later used as fortress that
+            would house the Pope in time of turmoil. It as an amazing piece of architecture. 
+          </dd>
+        </div>
+        </dl>
+        </div>
+    </main>
+    <!-- footer for whole site -->
+    <footer>
+      <p>
+        Copyright &copy; 2022 - Abigail Magdaleno. &nbsp;All rights
+        reserved.&nbsp;
+      </p>
+    </footer>
+  </body>
+</html>
